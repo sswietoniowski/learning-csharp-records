@@ -67,3 +67,8 @@ WriteLine(newCourse);
 WriteLine(newCourse == otherNewCourse);
 WriteLine(newCourse.GetHashCode());
 WriteLine(otherNewCourse.GetHashCode());
+
+if (newCourse is AdvancedCourseRecord advancedCourseRecord)
+{
+    WriteLine(advancedCourseRecord);
+}

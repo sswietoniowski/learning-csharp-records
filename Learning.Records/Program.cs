@@ -65,6 +65,7 @@ AdvancedCourseRecord otherNewCourse = new AdvancedCourseRecord("Master C# Record
 
 WriteLine(newCourse);
 WriteLine(newCourse == otherNewCourse);
+WriteLine(ReferenceEquals(newCourse, otherNewCourse));
 WriteLine(newCourse.GetHashCode());
 WriteLine(otherNewCourse.GetHashCode());
 

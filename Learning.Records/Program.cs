@@ -32,7 +32,7 @@ var anotherRecord = courseRecord;
 
 //anotherRecord.Name = "Intricaties of C# records"; // records are reference type, but :-) with a twist (immutable), init only property in this case
 
-anotherRecord = courseRecord with { Name = "Intricaties of C# records" }; // to change anything we must create a new object
+anotherRecord = courseRecord with { Name = "Intricaties of C# records" }; // to change anything we must create a new object (aka: clone it)
 
 PrintCourseRecord(courseRecord);
 PrintCourseRecord(anotherRecord);
@@ -50,5 +50,3 @@ WriteLine($"Destructured data from record: {name}, {author}");
 (name, author) = course;
 
 WriteLine($"Destructured data from class: {name}, {author}");
-
-// cloned a record

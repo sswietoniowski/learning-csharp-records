@@ -26,7 +26,7 @@ PrintCourse(course);
 PrintCourse(anotherCourse);
 
 
-var courseRecord = new CourseRecord("Advanced C#", "Alex Fox"); // positional record
+var courseRecord = new CourseRecord(Name: "Advanced C#") { Author = "Alex Fox" }; // custom record
 
 var anotherRecord = courseRecord;
 

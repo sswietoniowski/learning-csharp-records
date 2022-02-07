@@ -21,7 +21,7 @@
         public string Title => $"{Name}, {Author}";
     }
 
-    // starting with C# 10 we can have record structs (you know different management allocation amont other things ;-))
+    // starting with C# 10 we can have record structs (you know different management allocation among other things ;-))
     public record struct CourseRecordAsStruct
     {
         public string Name;

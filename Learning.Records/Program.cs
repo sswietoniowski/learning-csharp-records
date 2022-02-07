@@ -54,3 +54,16 @@ WriteLine($"Destructured data from class: {name}, {author}");
 // using "custom" property
 
 WriteLine($"{courseRecord.Title}");
+
+// inheritance and polimorphism is available for records
+
+CourseRecord newCourse = new AdvancedCourseRecord("Master C# Records", 5000m) { Author = "John Doe" };
+
+// we've got some methods for free :-), that is ToString(), Equals() and GetHashCode()
+
+AdvancedCourseRecord otherNewCourse = new AdvancedCourseRecord("Master C# Records", 5000m) { Author = "John Doe" };
+
+WriteLine(newCourse);
+WriteLine(newCourse == otherNewCourse);
+WriteLine(newCourse.GetHashCode());
+WriteLine(otherNewCourse.GetHashCode());

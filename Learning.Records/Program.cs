@@ -50,3 +50,7 @@ WriteLine($"Destructured data from record: {name}, {author}");
 (name, author) = course;
 
 WriteLine($"Destructured data from class: {name}, {author}");
+
+// using "custom" property
+
+WriteLine($"{courseRecord.Title}");

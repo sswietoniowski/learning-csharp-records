@@ -36,3 +36,19 @@ anotherRecord = courseRecord with { Name = "Intricaties of C# records" }; // to 
 
 PrintCourseRecord(courseRecord);
 PrintCourseRecord(anotherRecord);
+
+// records are great candidate for DTOs to eliminate errors caused by mutability
+
+// we can destructure a record
+
+var (name, author) = courseRecord;
+
+WriteLine($"Destructured data from record: {name}, {author}");
+
+// classes can be deconstructed too, but not by default (you must write a Deconstruct method)
+
+(name, author) = course;
+
+WriteLine($"Destructured data from class: {name}, {author}");
+
+// cloned a record

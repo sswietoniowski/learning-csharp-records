@@ -16,7 +16,7 @@
             author = Author;
         }
 
-        public string Author { get; init; } = "";
+        public string Author { get; init; } = default!;
         public string Title => $"{Name}, {Author}";
     }
 }

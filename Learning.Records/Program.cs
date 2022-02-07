@@ -59,7 +59,7 @@ WriteLine($"{courseRecord.Title}");
 
 CourseRecord newCourse = new AdvancedCourseRecord("Master C# Records", 5000m) { Author = "John Doe" };
 
-// we've got some methods for free :-), that is ToString(), Equals() and GetHashCode()
+// we've got some methods for free :-), that is ToString(), Equals() and GetHashCode() <- synthesized methods
 
 AdvancedCourseRecord otherNewCourse = new AdvancedCourseRecord("Master C# Records", 5000m) { Author = "John Doe" };
 

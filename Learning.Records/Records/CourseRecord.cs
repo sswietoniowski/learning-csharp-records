@@ -2,7 +2,7 @@
 
 namespace Learning.Records.Records
 {
-    // keyword class is not required here (it is like that by default), I've added it to constract with record struct in declaration
+    // keyword class is not required here (it is like that by default), I've added it to contrast with record struct in declaration
     public record class CourseRecord(string Name)
     {
         // constructor with parameters is created only for the positional parameters, 
